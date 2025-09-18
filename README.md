@@ -20,14 +20,20 @@ pip install Flask requests
 ```bash
 # Activate virtual environment & start the user service (port 5001)
 venv\Scripts\activate && python user_service.py
+```
 
+![User Service Terminal](screenshots/terminal-window-1.png)
+
+```bash
 # *Open a New Terminal*
 
 # Activate virtual environment & start the order service (port 5002)
 venv\Scripts\activate && python order_service.py
 ```
 
-# User Service API Usage Examples
+![Order Service Terminal](screenshots/terminal-window-2.png)
+
+# User Service API Usage Examples (PowerShell)
 
 ```bash
 # Create a new user
@@ -62,3 +68,5 @@ curl http://localhost:5002/orders/3
 # Expected Response:
 {"product":"Tablet","user":{"email":"alice@example.com","name":"Alice"},"user_id":1}
 ```
+
+![API Usage Terminal](screenshots/terminal-window-3.png)
